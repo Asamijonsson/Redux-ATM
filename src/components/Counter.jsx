@@ -24,38 +24,7 @@ const Counter = () => {
       ) : (
         <p>You don't have money for withdrawal</p>
       )}
-      <p>Withdraw</p>
-      <button
-        onClick={() => {
-          dispatch(increment100());
-        }}
-      >
-        100kr
-      </button>
-      <button
-        onClick={() => {
-          dispatch(increment200());
-        }}
-      >
-        200kr
-      </button>
-      <button
-        onClick={() => {
-          dispatch(increment500());
-        }}
-      >
-        500kr
-      </button>
-      <button
-        onClick={() => {
-          dispatch(increment1000());
-        }}
-      >
-        1000kr
-      </button>
-      <br />
-      <br />
-      <p>Deposit</p>
+      <h3>Withdraw</h3>
       <button
         onClick={() => {
           dispatch(decrement100());
@@ -80,6 +49,37 @@ const Counter = () => {
       <button
         onClick={() => {
           dispatch(decrement1000());
+        }}
+      >
+        1000kr
+      </button>
+      <br />
+      <br />
+      <h3>Deposit</h3>
+      <button
+        onClick={() => {
+          dispatch(increment100());
+        }}
+      >
+        100kr
+      </button>
+      <button
+        onClick={() => {
+          dispatch(increment200());
+        }}
+      >
+        200kr
+      </button>
+      <button
+        onClick={() => {
+          dispatch(increment500());
+        }}
+      >
+        500kr
+      </button>
+      <button
+        onClick={() => {
+          dispatch(increment1000());
         }}
       >
         1000kr
